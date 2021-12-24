@@ -2,11 +2,12 @@
 
 📍 [DEMO](https://ekfka4863.github.io/myMomentum/) 📍 
 
+<br />
+
 ## 💡 기본 Information
 📌 개발 기간 📆 : 
 - 2021.12.24.금요일 - 2021.12.25.일요일   
 
-<br />
 <br />
 <br />
 
@@ -20,10 +21,14 @@
 
 <br />
 
-### 디자인 Tool
+### 디자인 Tool 🖌️
 - `Figma`
 
-> Figma로 구현한 디자인 
+<br />
+
+#### Figma로 구현한 디자인 🎨
+
+<br />
 
 <img src="./figma/로그인전메인페이지-모달창닫기전.png" alt="로그인 전 메인페이지 - 모달창 닫기 전 화면" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
 <img src="./figma/로그인후메인페이지-모달창닫기전.png" alt="로그인 후 메인페이지 - 모달창 닫기 전 화면" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
@@ -35,7 +40,7 @@
 
 <br />
 <br />
-<br />
+
 
 ## 💡 챌린지 조건 / 어플리케이션 주요 기능 
 
@@ -53,15 +58,15 @@
 
 <br />
 <br />
-<br />
+
 
 ## 💡 구현한 어플리케이션 / 결과물 
+<img src="./figma/" alt="" width="700px" height="auto" style="padding-left: 40px; padding-bottom: 20px;  padding-top: 10px;background-color: #eee; min-width: 500px; min-height: 350px;" />
 
-<img src="./figma/" alt="" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
+<br />
 
 📍 [DEMO](https://ekfka4863.github.io/myMomentum/) 📍 
 
-<br />
 <br />
 <br />
 
@@ -75,3 +80,7 @@
   - 디자인적으로 감각이 없다는 생각에 `figma`로 디자인적으로 내가 만들고자 하는 application의 frame을 만들었는데,     
   생각보다 시간이 많이 걸려서 코딩하는 시간이 상대적으로 모자랐다.    
 
+<br />
+<br />
+
+🎄 읽어 주셔서 감사합니다! 🎉
