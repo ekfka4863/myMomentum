@@ -4,9 +4,147 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700;900&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="../css/src/main.css">
   <title>my momentum</title>
 </head>
 <body>
-  <h1>hello this is working well...</h1>
+  <div id="wrap">
+    <h1 class="blind">welcome to my momentum</h1>
+
+    <header id="headBox">
+      <h2 class="blind">header area</h2>
+      <div class="shortcut_links">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/">
+              <span class="blind">클릭시 유투브 이동합니다</span>
+              <img src="../multi/img/youtube_icon.png" alt="유투브 바로가기 아이콘" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.naver.com/">
+              <span class="blind">클릭시 네이버 이동합니다</span>
+              <img src="../multi/img/naver_icon.png" alt="네이버 바로가기 아이콘" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/">
+              <span class="blind">클릭시 구글 이동합니다</span>
+              <img src="../multi/img/google_icon.png" alt="구글 바로가기 아이콘" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.gmail.com/">
+              <span class="blind">클릭시 지메일 이동합니다</span>
+              <img src="../multi/img/gmail_icon.png" alt="지메일 바로가기 아이콘" />
+            </a>
+          </li>
+        </ul>
+      </div><!--// .shortcut_links -->
+      <div class="change_bg_color_btn">
+        <button type="button">
+          <img src="../multi/img/change_bg_color_btn.png" alt="클릭시 배경색 바꾸는 버튼입니다" />
+        </button>
+      </div>
+    </header>
+
+    <section id="mainConBox">
+      <h2 class="blind">main content area</h2>
+
+      <section class="main_con_right_side">
+        <div class="date_location_weather">
+          <ul>
+            <li>
+              <img src="../multi/img/calender_icon.png" alt="날짜 정보" />
+              <span class="date_info">December 25, 2021</span>
+            </li>
+            <li>
+              <img src="../multi/img/location_icon.png" alt="위치 정보" />
+              <span class="location_info">Seoul</span>
+            </li>
+            <li>
+              <img src="../multi/img/snowy.png" alt="날씨 정보" />
+              <span class="weather_info">-10 &deg;</span>
+            </li>
+          </ul>
+          <div class="remove_modal_btn">
+            <button type="button">
+              <img src="../multi/img/remove_modal_btn.png" alt="모달 없애기 버튼" />
+            </button>
+          </div>
+        </div>
+        
+        <h3>log in</h3>
+        <div class="login_part">
+          <form action="#">
+            <label for="loginName" class="blind">로그인 하려면 이름을 입력하세요</label>
+            <input id="loginName" value="" type="text" placeholder="Your name ..." />
+          </form>
+        </div><!--// .login_part -->
+        <div class="music_player_part">
+          <div class="player_body">
+            <div class="player_album"></div>
+            <div class="player_function">
+              <button type="button">
+                <img src="../multi/img/previous_music_play_button.png" alt="이전 노래 버튼">
+              </button>
+              <button type="button">
+                <img src="../multi/img/music_play_button.png" alt="현재 노래 재생 버튼">
+              </button>
+              <button type="button">
+                <img src="../multi/img/next_music_play_button.png" alt="다음 노래 버튼">
+              </button>
+            </div>
+          </div>
+        </div><!--// .music_player_part -->
+      </section><!--// .main_con_right_side -->
+
+      <section class="main_con_left_side">
+        <h3 class="blind">calender and todolist</h3>
+        <div class="calender_part">
+          <div>
+            <h4>
+              <span class="blind">이번 달은</span>
+              december
+              <span class="blind">입니다</span>
+            </h4>
+            <button type="button">
+              <img src="../multi/img/" alt="" />
+            </button>
+            <button type="button">
+              <img src="../multi/img/" alt="" />
+            </button>
+          </div>
+          <div>
+            <!-- 날짜들...나열.. 근데 무슨 태그 사용할거?? -->
+          </div>
+        </div>
+        <div class="todolist_part">
+          <h4>
+            <span class="blind">오늘의 할일을</span>
+            todolist
+            <span class="blind">적어주세요</span> 
+          </h4>
+          <form action="#">
+            <label for="aToDO"></label>
+            <input id="aToDO" type="text" value="" placeholder="Write a todo ..." />
+          </form>
+        </div>
+      </section><!--// .main_con_left_side-->
+    </section><!--// #mainConBox -->
+
+    <section id="mainBgBox">
+      <h2 class="blind">main background area</h2>
+
+      <div class="clock">
+        <span class="clock_display">07:30</span>
+      </div>
+    </section><!--// .main_con_right_side -->
+  </div>
 </body>
 </html>
