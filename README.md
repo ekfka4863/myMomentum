@@ -1,12 +1,8 @@
-# 노마드코더 챌린지 19기 개인 졸업작품 - My Momentum
+# ✨ 노마드코더 챌린지 19기 개인 졸업작품 👉 My Momentum ✨ 
 
-<br />
-<br />
+📍 [DEMO]() 📍 
 
 ## 💡 기본 Information
-
-<br />
-
 📌 개발 기간 📆 : 
 - 2021.12.24.금요일 - 2021.12.25.일요일   
 
@@ -16,21 +12,22 @@
 
 ## 💡 기술 stack
 
-<br />
-
 ### Front-End
 - `HTML`
 - `CSS`
 - `JavaScript`
 - `Git`
 
+<br />
+
 ### 디자인 Tool
 - `Figma`
-- Figma로 만든 디자인 예시 
 
-<img src="./figma/로그인 전 메인페이지 - 모달창 닫기 전.png" alt="로그인 전 메인페이지 - 모달창 닫기 전 화면" width="700px" height="px" style="padding-left: px;" />
-<img src="./figma/로그인 후 메인페이지 - 모달창 닫기 전.png" alt="로그인 후 메인페이지 - 모달창 닫기 전 화면" width="700px" height="px" style="padding-left: px;" />
-<img src="./figma/로그인 후 메인페이지 - 모달창 닫은 후.png" alt="로그인 후 메인페이지 - 모달창 닫은 후 화면" width="700px" height="px" style="padding-left: px;" />
+> Figma로 구현한 디자인 
+
+<img src="./figma/로그인전메인페이지-모달창닫기전.png" alt="로그인 전 메인페이지 - 모달창 닫기 전 화면" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
+<img src="./figma/로그인후메인페이지-모달창닫기전.png" alt="로그인 후 메인페이지 - 모달창 닫기 전 화면" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
+<img src="./figma/로그인후메인페이지-모달창닫은후.png" alt="로그인 후 메인페이지 - 모달창 닫은 후 화면" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
 
 <br />
 
@@ -41,8 +38,6 @@
 <br />
 
 ## 💡 챌린지 조건 / 어플리케이션 주요 기능 
-
-<br />
 
 1. 실시간 시계 기능 
 2. 로컬 스토리지를 사용한 로그인 기능 
@@ -55,6 +50,16 @@
 
 ☝️ 제출은 `깃헙.io` 포멧으로 제출할 것!
 
+
+<br />
+<br />
+<br />
+
+## 💡 구현한 어플리케이션 / 결과물 
+
+<img src="./figma/" alt="" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
+
+📍 [DEMO]() 📍 
 
 <br />
 <br />
