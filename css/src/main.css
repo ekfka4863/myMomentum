@@ -290,6 +290,32 @@ h3 {
   overflow: hidden;
 }
 
+.calender_part > div {
+  display: flex;
+  justify-content: space-between;
+}
+.calender_part > div > h4 {
+  order: 2;
+}
+.calender_part > div > button:first-child {
+  order: 1;
+}
+.calender_part > div > button:last-child {
+  order: 3;
+}
+
+.calender_weekdays {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  margin: auto;
+}
+.calender_weekdays li {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  text-transform: capitalize;
+}
 
 
 /* .todolist 
