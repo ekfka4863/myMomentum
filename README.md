@@ -1,6 +1,6 @@
 # ✨ 노마드코더 챌린지 19기 개인 졸업작품 👉 My Momentum ✨ 
 
-📍 [DEMO]() 📍 
+📍 [DEMO](https://ekfka4863.github.io/myMomentum/) 📍 
 
 ## 💡 기본 Information
 📌 개발 기간 📆 : 
@@ -59,7 +59,7 @@
 
 <img src="./figma/" alt="" width="700px" height="px" style="padding-left: 40px; padding-bottom: 20px;" />
 
-📍 [DEMO]() 📍 
+📍 [DEMO](https://ekfka4863.github.io/myMomentum/) 📍 
 
 <br />
 <br />
