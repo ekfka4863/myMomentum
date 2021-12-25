@@ -123,7 +123,8 @@
 
 
 h3 {
-  padding: 45px 0px 40px 0;
+  padding: 45px 0 10px 0;
+  line-height: 60px;
 }
 
 /* .login_part 
@@ -132,6 +133,7 @@ h3 {
   width: 600px;
   height: 180px;
   margin: auto;
+  margin-top: 40px;
   background-color: rgba(238, 238, 238, 0.8);
   border-radius: 20px;
 }
@@ -317,6 +319,33 @@ h3 {
   text-transform: capitalize;
 }
 
+.calender_days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 315px;
+  padding-left: 8px;
+  padding-top: 15px;
+  margin: auto;
+}
+.calender_days li {
+  width: 45px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+}
+.calender_days li.hightlight_today {
+  background-color: #c7d3e3;
+  border-radius: 45px;
+  font-weight: 700;
+  color: #66aaf2;
+}
+.calender_days li.hightlight_today:hover {
+  background-color: #89b5e4;
+  transform: scale(1.015);
+  color: var(--grayish-blue);
+}
 
 /* .todolist 
 ---------------------------------- */

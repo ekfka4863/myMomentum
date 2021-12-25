@@ -59,7 +59,7 @@
 
       <section class="main_con_right_side">
         <div class="date_location_weather">
-          <ul>
+          <ul class="date_location_weather_datails">
             <li>
               <img src="../multi/img/calender_icon.png" alt="날짜 정보" />
               <span class="date_info">December 25, 2021</span>
@@ -69,8 +69,8 @@
               <span class="location_info">Seoul</span>
             </li>
             <li>
-              <img src="../multi/img/snowy.png" alt="날씨 정보" />
-              <span class="weather_info">-10 &deg;</span>
+              <img class="weather_info_img" src="../multi/img/snowy.png" alt="날씨 정보" />
+              <span class="weather_info">0 &deg;</span>
             </li>
           </ul>
           <div class="remove_modal_btn">
@@ -122,20 +122,11 @@
             </button>
           </div>
           <ul class="calender_weekdays">
-            <li>mon</li>
-            <li>tue</li>
-            <li>wed</li>
-            <li>thu</li>
-            <li>fri</li>
-            <li>sat</li>
-            <li>sun</li>
+            <!-- <li></li> * 7 개 -> js 로 mon ~ sun까지 생성할 것 -->
           </ul>
-          <ul class="calender_dates">
+          <ul class="calender_days">
             <!-- <li></li> * ___ 개 -> js 로 ?? api 로?? -->
           </ul>
-          <div>
-            <!-- 날짜들...나열.. 근데 무슨 태그 사용할거?? -->
-          </div>
         </div>
         <div class="todolist_part">
           <h4>
@@ -165,6 +156,12 @@
   <script src="../js/src/clock.js"></script>
   <script src="../js/src/bgColor.js"></script>
   <script src="../js/src/weather.js"></script>
-  <!-- <script src=""></script> -->
+  <script src="../js/src/date.js"></script>
+  <script src="../js/src/calender.js"></script>
+  <script src="../js/src/login.js"></script>
+  <!-- <script src="../js/src/todolist.js"></script>
+  <script src="../js/src/musicPlayer.js"></script>
+  <script src="../js/src/removeModal.js"></script>
+  <script src="../js/src/displayMainDetails.js"></script> -->
 </body>
 </html>
