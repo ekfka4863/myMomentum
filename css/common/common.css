@@ -20,6 +20,10 @@ body {
   clip: rect(0 0 0 0); /* IE 6,7 */ 
   clip: rect(0,0,0,0);
 }
+.hidden {
+  display: none;
+}
+
 
 
 /* styling */
