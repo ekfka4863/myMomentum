@@ -1,5 +1,6 @@
 // musicPlayer.js
 
+
 // DOM
 const musicPlayer = document.querySelector(".music_player_src");
 const playerFunction = document.querySelector(".player_function");
@@ -8,7 +9,7 @@ const playBtn = playerFunction.querySelector("button:nth-child(2)");
 const nextBtn = playerFunction.querySelector("button:nth-child(3)");
 const playerAlbum =  document.querySelector(".player_album");
 
-
+const PLAYING = "playing";
 
 // mp3 files
 const musicFiles = [
@@ -23,14 +24,18 @@ const musicFiles = [
 
 // background player album image
 const albumImg = [
-  "",
+  "https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80",
+  "https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+  "https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+  "https://images.unsplash.com/photo-1484589065579-248aad0d8b13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=759&q=80",
+  "https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  "https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
 ];
 
 
-// function
+// function   (reference:  https://wickedmagica.tistory.com/84)
 function playMusic () {
-  const PLAYING = "playing";
-
   const pauseBtnImg = playBtn.querySelector("img");
 
   if (!musicPlayer.classList.contains(PLAYING)) {
@@ -43,6 +48,8 @@ function playMusic () {
     pauseBtnImg.src = "../multi/img/music_play_button.png";
     musicPlayer.pause();
   }
+
+  spinAlbum();
 }
 
 let streamingMusicNum = 0;
@@ -58,6 +65,7 @@ function prevMusic () {
     streamingMusicNum = musicFiles.length - 1;
   } 
 
+  changeAlbumImg(streamingMusicNum);
   musicPlayer.play();
 }
 
@@ -70,13 +78,25 @@ function nextMusic () {
     musicPlayer.src = musicFiles[streamingMusicNum];
   }
 
+  changeAlbumImg(streamingMusicNum);
   musicPlayer.play();
 }
 
 
+function changeAlbumImg(streamingMusicNum) {
+  playerAlbum.style.backgroundImage = `url(${albumImg[streamingMusicNum]})`;
+}
+
+// spin player album image
 function spinAlbum() {
 
+  if (musicPlayer.classList.contains(PLAYING)) {
+    playerAlbum.classList.add("spin");
+  } else {
+    playerAlbum.classList.remove("spin");
+  }
 }
+
 
 
 // event 

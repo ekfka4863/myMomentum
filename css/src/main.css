@@ -203,7 +203,7 @@ h3 {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  background-image: url(https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80);
+  background-image: url("https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,6 +251,28 @@ h3 {
 .player_function button:hover {
   cursor: pointer;
 }
+
+
+
+/* spin animation */
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0deg);
+  }25% {
+    transform: rotate(90deg);
+  }50% {
+    transform: rotate(180deg);
+  }75% {
+    transform: rotate(270deg);
+  }100% {
+    transform: rotate(360deg);
+  }
+}
+
+.player_album.spin {
+  animation: spinAnimation 1.5s linear infinite;
+}
+
 
 
 
@@ -401,6 +423,8 @@ h3 {
 /* #mainBgBox
 ======================================== */
 #mainBgBox {
+  position: relative;
+  
   height: auto;
   min-height: 850px;
   padding-top: 200px;
