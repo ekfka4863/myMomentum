@@ -12,6 +12,8 @@ function getTime() {
     let hr = date.getHours();
     let min = date.getMinutes();
     let sec = date.getSeconds();
+
+    // console.log(hr, min, sec);
   
     (hr < 10) ? (hr = '0' + hr) : hr;
     (min < 10) ? (min = '0' + min) : min;

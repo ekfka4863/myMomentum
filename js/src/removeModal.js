@@ -2,8 +2,8 @@
 
 // DOM 
 const removeModalBtn = document.querySelector(".remove_modal_btn > button");
-// const mainConRightSide = document.querySelector(".main_con_right_side");
-const dateLocationWeather = document.querySelector(".date_location_weather");
+const mainConLeftSide = document.querySelector(".main_con_left_side");
+// const dateLocationWeather = document.querySelector(".date_location_weather");
 const musicPlayerPart = document.querySelector(".music_player_part");
 
 const clock = document.querySelector(".clock");
@@ -11,7 +11,7 @@ const clock = document.querySelector(".clock");
 
 // function 
 function removeModal() {
-  mainConRightSide.style.opacity = "0";
+  mainConLeftSide.style.opacity = "0";
   console.log("clicked");
 
   moveClock();
@@ -20,8 +20,8 @@ function removeModal() {
 
 function moveClock() {
   clock.style.position = "absolute";
-  clock.style.top = "70px";
-  clock.style.left = "190px";
+  clock.style.top = "160px";
+  clock.style.left = "110px";
 }
 
 function musicPlayerPartBg() {
@@ -31,7 +31,7 @@ function musicPlayerPartBg() {
   musicPlayerPartBg.style.display = "block";
 
   // 위치 조절 
-  musicPlayerPart.style.top = "660px";
+  musicPlayerPart.style.top = "535px";
 }
 
 

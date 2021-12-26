@@ -54,7 +54,7 @@ function onGeoOk(position) {
   const API_KEY = "a06f26fedd93580678cfa6cf333c469d";
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   // console.log(url);
-
+  // https://api.openweathermap.org/data/2.5/weather?lat=37.6200456&lon=126.7473828&appid=a06f26fedd93580678cfa6cf333c469d&units=metric;
   // fetch로 API 불러오기 
   fetch(url).then((response) => response.json()).then((data) => {
     const location = data.name;
@@ -75,5 +75,8 @@ navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 // event 
 
 // ===================================================================================================
+
+
+
 
 

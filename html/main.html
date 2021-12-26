@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700;900&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700;900&family=League+Script&family=Licorice&family=Monsieur+La+Doulaise&family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700;800&family=Oooh+Baby&family=Shadows+Into+Light&family=Waterfall&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/src/main.css">
   <title>my momentum</title>
 </head>
@@ -57,42 +57,61 @@
     <section id="mainConBox">
       <h2 class="blind">main content area</h2>
 
-      <section class="main_con_right_side">
-        <div class="date_location_weather">
-          <ul class="date_location_weather_datails">
-            <li>
-              <img src="../multi/img/calender_icon.png" alt="날짜 정보" />
-              <span class="date_info">December 25, 2021</span>
-            </li>
-            <li>
-              <img src="../multi/img/location_icon.png" alt="위치 정보" />
-              <span class="location_info">Seoul</span>
-            </li>
-            <li>
-              <img class="weather_info_img" src="../multi/img/snowy.png" alt="날씨 정보" />
-              <span class="weather_info">0 &deg;</span>
-            </li>
-          </ul>
-          <div class="remove_modal_btn">
-            <button type="button">
-              <img src="../multi/img/remove_modal_btn.png" alt="모달 없애기 버튼" />
-            </button>
+      <div class="main_con_left_side_outer">
+        <section class="main_con_left_side">
+          <div class="date_location_weather">
+            <ul class="date_location_weather_datails">
+              <li>
+                <img src="../multi/img/calender_icon.png" alt="날짜 정보" />
+                <span class="date_info">December 25, 2021</span>
+              </li>
+              <li>
+                <img src="../multi/img/location_icon.png" alt="위치 정보" />
+                <span class="location_info">Seoul</span>
+              </li>
+              <li>
+                <img class="weather_info_img" src="../multi/img/snowy.png" alt="날씨 정보" />
+                <span class="weather_info">0 &deg;</span>
+              </li>
+            </ul>
+            <div class="remove_modal_btn">
+              <button type="button">
+                <img src="../multi/img/remove_modal_btn.png" alt="모달 없애기 버튼" />
+              </button>
+            </div>
           </div>
-        </div>
         
-        <h3>log in</h3>
-        <div class="login_part">
-          <form action="#">
-            <label for="loginName" class="blind">로그인 하려면 이름을 입력하세요</label>
-            <input id="loginName" value="" type="text" placeholder="Your name ..." />
-          </form>
-        </div><!--// .login_part -->
-
-        <!-- 원래 .music_player_part 있던 자리! -->
+          <h3>log in</h3>
+          <div class="login_part">
+            <form action="#">
+              <label for="loginName" class="blind">로그인 하려면 이름을 입력하세요</label>
+              <input id="loginName" value="" type="text" placeholder="Your name ..." />
+            </form>
+          </div><!--// .login_part -->
+          <!-- 원래 .music_player_part 있던 자리! -->
+        
+        </section><!--// .main_con_left_side -->
+          <!-- 뮤직 플레이어 개별로 그냥 뺌 -->
+          <div class="music_player_part">
+            <div class="player_body">
+              <audio class="music_player_src blind" src="../multi/audio/GoAllIn.mp3" ></audio>
+              <div class="player_album"></div>
+              <div class="player_function">
+                <button type="button">
+                  <img src="../multi/img/previous_music_play_button.png" alt="이전 노래 버튼">
+                </button>
+                <button type="button">
+                  <img src="../multi/img/music_play_button.png" alt="현재 노래 재생 버튼">
+                </button>
+                <button type="button">
+                  <img src="../multi/img/next_music_play_button.png" alt="다음 노래 버튼">
+                </button>
+              </div>
+            </div><!--// .player_body -->
+          </div><!--// .music_player_part -->
+      </div><!--// .main_con_left_side_outer -->
       
-      </section><!--// .main_con_right_side -->
-
-      <section class="main_con_left_side">
+      <section class="main_con_right_side">
         <h3 class="blind">calender and todolist</h3>
 
         <div class="calender_part">
@@ -140,35 +159,23 @@
             </li>
           </ul>
         </div>
-      </section><!--// .main_con_left_side-->
+      </section><!--// .main_con_right_side-->
     </section><!--// #mainConBox -->
-
-    <!-- 뮤직 플레이어 개별로 그냥 뺌 -->
-    <div class="music_player_part">
-      <div class="player_body">
-        <audio class="music_player_src blind" src="../multi/audio/GoAllIn.mp3" ></audio>
-        <div class="player_album"></div>
-        <div class="player_function">
-          <button type="button">
-            <img src="../multi/img/previous_music_play_button.png" alt="이전 노래 버튼">
-          </button>
-          <button type="button">
-            <img src="../multi/img/music_play_button.png" alt="현재 노래 재생 버튼">
-          </button>
-          <button type="button">
-            <img src="../multi/img/next_music_play_button.png" alt="다음 노래 버튼">
-          </button>
-        </div>
-      </div><!--// .player_body -->
-    </div><!--// .music_player_part -->
 
     <section id="mainBgBox">
       <h2 class="blind">main background area</h2>
+
+      <!-- my aim p tag -->
+
+      <ul class="main_bg_box_details">    
+        <!-- (li > (img + span)) * 5 -->
+      </ul>
 
       <div class="clock">
         <span class="clock_display">00:00:00</span>
       </div>
     </section><!--// .main_con_right_side -->
+
   </div><!--// #wrap -->
 
 
@@ -181,8 +188,6 @@
   <script src="../js/src/login.js"></script>
   <script src="../js/src/musicPlayer.js"></script>
   <script src="../js/src/todolist.js"></script>
-  <script src="../js/src/removeModal.js"></script>
-  <!-- <script src="../js/src/displayMainDetails.js"></script> -->
-  <!-- <script src="../js/src/removeModalAddDetails.js">위에 두게 합친버전...</script> -->
+  <script src="../js/src/removeModalAddDetails.js"></script>
 </body>
 </html>
