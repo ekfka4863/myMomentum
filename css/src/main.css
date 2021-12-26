@@ -405,7 +405,7 @@ h3 {
   border-radius: 20px;
   background-color: rgba(238, 238, 238, 0.8);
 
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .todolist_part::before {

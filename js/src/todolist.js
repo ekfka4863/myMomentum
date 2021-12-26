@@ -8,7 +8,8 @@ const todosUl = document.querySelector(".todos");
 
 
 // store todos in localStorage
-const todos = [];
+// const todos = [];
+let todos = [];
 
 const TODOS_KEY = "todos";
 
@@ -26,22 +27,24 @@ function setTodo(event) {
   // todos.push(newTodo);
   todos.push(newTodoObj);
 
-  // console.log('todos array:', todos);
-
-  todolistInput.value = "";
 
   // paintTodo(newTodo);
   paintTodo(newTodoObj.text);
   saveTodos();
+
+  todolistInput.value = "";
 }
 
-function paintTodo(newTodo) {
+function paintTodo(newTodoObj) {
   const todoLi = document.createElement("li");
+  todoLi.classList.add(newTodoObj.id);
+  console.log(newTodoObj.id);
   todosUl.appendChild(todoLi);
 
   const todoLiP = document.createElement("p");
   todoLi.appendChild(todoLiP);
-  todoLiP.textContent = `${newTodo}`;
+  console.log(newTodoObj.text);
+  todoLiP.textContent = `${newTodoObj.text}`;
 
   const todoLiBtns = document.createElement("div");
   todoLiBtns.classList.add("todo_btn_wrapper");
@@ -63,7 +66,7 @@ function paintTodo(newTodo) {
   checkImg.src = "../multi/img/todo_check.png";
   checkTodoBtn.appendChild(checkImg);
 
-
+  
   
   deleteTodoBtn.addEventListener("click", deleteTodo);
   checkTodoBtn.addEventListener("click", checkTodo);
@@ -81,6 +84,12 @@ function deleteTodo(e) {
   const parentTodoLi = parentDiv.parentElement;
   // console.log(parentTodoLi);
   parentTodoLi.remove(); 
+
+  // localStorage에서도 지우기
+  todos = JSON.parse(savedTodos).filter((todo) => todo.id !== parseInt(parentTodoLi.className));
+  console.log(todos);
+
+  saveTodos();
 }
 
 
@@ -99,12 +108,17 @@ function saveTodos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
 }
 
-const savedTodos = localStorage.getItem(TODOS_KEY);
+// const savedTodos = localStorage.getItem(TODOS_KEY);
+let savedTodos = localStorage.getItem(TODOS_KEY);
+
 
 if (savedTodos !== null) {
   const parsedTodos = JSON.parse(savedTodos);
   parsedTodos.forEach(paintTodo);
 }
+
+
+
 
 
 // cf.
