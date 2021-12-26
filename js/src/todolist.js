@@ -7,9 +7,10 @@ const todolistInput = todolistForm.querySelector("input");
 const todosUl = document.querySelector(".todos");
 
 
-// const todoLiBtns = document.querySelector(".todo_btn_wrapper");
-// const deleteTodoBtn = document.querySelector(".delete_todo_btn");
-// const checkTodoBtn = document.querySelector(".check_todo_btn");
+// store todos in localStorage
+const todos = [];
+
+const TODOS_KEY = "todos";
 
 
 // functions
@@ -17,9 +18,21 @@ function setTodo(event) {
   event.preventDefault();
 
   const newTodo = todolistInput.value;
+
+  const newTodoObj = {
+    text: newTodo,
+    id: Date.now(),
+  };
+  // todos.push(newTodo);
+  todos.push(newTodoObj);
+
+  // console.log('todos array:', todos);
+
   todolistInput.value = "";
 
-  paintTodo(newTodo);
+  // paintTodo(newTodo);
+  paintTodo(newTodoObj.text);
+  saveTodos();
 }
 
 function paintTodo(newTodo) {
@@ -80,9 +93,21 @@ function checkTodo(e) {
   checkTodoBtnImg.src = "../multi/img/todo_checked.png";
 }
 
+// save todos in localStorage
+function saveTodos() {
+  // localStorage.setItem("todos", todos);
+  localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
+}
+
+const savedTodos = localStorage.getItem(TODOS_KEY);
+
+if (savedTodos !== null) {
+  const parsedTodos = JSON.parse(savedTodos);
+  parsedTodos.forEach(paintTodo);
+}
 
 
-
+// cf.
 // const todoLiBtns = document.querySelector(".todo_btn_wrapper");
 // const deleteTodoBtn = document.querySelector(".delete_todo_btn");
 // const checkTodoBtn = document.querySelector(".check_todo_btn");

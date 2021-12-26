@@ -109,6 +109,9 @@ function addDetails() {
 
 
   // detail - 4: todolist how many left 
+  // detailListArr[3].querySelector("span").textContent = `Today's todos: ${todolistNum} left`;
+  detailListArr[3].querySelector("span").textContent = `Today's todos: 00 left`;
+  detailListArr[3].querySelector("img").src = "../multi/img/todolist.png";
 
   
 
