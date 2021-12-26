@@ -8,6 +8,7 @@ const prevBtn = playerFunction.querySelector("button:nth-child(1)");
 const playBtn = playerFunction.querySelector("button:nth-child(2)");
 const nextBtn = playerFunction.querySelector("button:nth-child(3)");
 const playerAlbum =  document.querySelector(".player_album");
+const pauseBtnImg = playBtn.querySelector("img");
 
 const PLAYING = "playing";
 
@@ -36,7 +37,6 @@ const albumImg = [
 
 // function   (reference:  https://wickedmagica.tistory.com/84)
 function playMusic () {
-  const pauseBtnImg = playBtn.querySelector("img");
 
   if (!musicPlayer.classList.contains(PLAYING)) {
     musicPlayer.classList.add(PLAYING);
@@ -67,6 +67,10 @@ function prevMusic () {
 
   changeAlbumImg(streamingMusicNum);
   musicPlayer.play();
+
+  musicPlayer.classList.add(PLAYING);
+  pauseBtnImg.src = "../multi/img/music_pause_button.png";
+  spinAlbum();
 }
 
 function nextMusic () {
@@ -80,6 +84,10 @@ function nextMusic () {
 
   changeAlbumImg(streamingMusicNum);
   musicPlayer.play();
+
+  musicPlayer.classList.add(PLAYING);
+  pauseBtnImg.src = "../multi/img/music_pause_button.png";
+  spinAlbum();
 }
 
 

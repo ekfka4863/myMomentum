@@ -8,12 +8,14 @@ const musicPlayerPart = document.querySelector(".music_player_part");
 
 const clock = document.querySelector(".clock");
 
+
 // function 
 function removeModal() {
   mainConRightSide.style.opacity = "0";
   console.log("clicked");
 
   moveClock();
+  musicPlayerPartBg();
 }
 
 function moveClock() {
@@ -22,10 +24,17 @@ function moveClock() {
   clock.style.left = "190px";
 }
 
-function showMiniMusicPlayer () {
-  // musicPlayerPart.display.opacity = "1";
-  // 따로 분리 필요 ...!? 
+function musicPlayerPartBg() {
+  const musicPlayerPartBg = document.createElement("div");
+  musicPlayerPart.appendChild(musicPlayerPartBg);
+  musicPlayerPartBg.classList.add("music_player_part_bg");
+  musicPlayerPartBg.style.display = "block";
+
+  // 위치 조절 
+  musicPlayerPart.style.top = "660px";
 }
+
+
 
 // event 
 removeModalBtn.addEventListener("click", removeModal);

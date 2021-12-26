@@ -87,27 +87,14 @@
             <input id="loginName" value="" type="text" placeholder="Your name ..." />
           </form>
         </div><!--// .login_part -->
-        <div class="music_player_part">
-          <div class="player_body">
-            <audio class="music_player_src blind" src="../multi/audio/GoAllIn.mp3" ></audio>
-            <div class="player_album"></div>
-            <div class="player_function">
-              <button type="button">
-                <img src="../multi/img/previous_music_play_button.png" alt="이전 노래 버튼">
-              </button>
-              <button type="button">
-                <img src="../multi/img/music_play_button.png" alt="현재 노래 재생 버튼">
-              </button>
-              <button type="button">
-                <img src="../multi/img/next_music_play_button.png" alt="다음 노래 버튼">
-              </button>
-            </div>
-          </div>
-        </div><!--// .music_player_part -->
+
+        <!-- 원래 .music_player_part 있던 자리! -->
+      
       </section><!--// .main_con_right_side -->
 
       <section class="main_con_left_side">
         <h3 class="blind">calender and todolist</h3>
+
         <div class="calender_part">
           <div>
             <h4>
@@ -139,9 +126,41 @@
             <label for="aToDO"></label>
             <input id="aToDO" type="text" value="" placeholder="Write a todo ..." />
           </form>
+          <ul class="todos">
+            <li>
+              <!-- todo 내용... -->
+              <div class="todo_btn_wrapper">
+                <button type="button">
+                  <img src="../multi/img/" alt="삭제">
+                </button>
+                <button type="button">
+                  <img src="../multi/img/" alt="할일 완료">
+                </button>
+              </div>
+            </li>
+          </ul>
         </div>
       </section><!--// .main_con_left_side-->
     </section><!--// #mainConBox -->
+
+    <!-- 뮤직 플레이어 개별로 그냥 뺌 -->
+    <div class="music_player_part">
+      <div class="player_body">
+        <audio class="music_player_src blind" src="../multi/audio/GoAllIn.mp3" ></audio>
+        <div class="player_album"></div>
+        <div class="player_function">
+          <button type="button">
+            <img src="../multi/img/previous_music_play_button.png" alt="이전 노래 버튼">
+          </button>
+          <button type="button">
+            <img src="../multi/img/music_play_button.png" alt="현재 노래 재생 버튼">
+          </button>
+          <button type="button">
+            <img src="../multi/img/next_music_play_button.png" alt="다음 노래 버튼">
+          </button>
+        </div>
+      </div><!--// .player_body -->
+    </div><!--// .music_player_part -->
 
     <section id="mainBgBox">
       <h2 class="blind">main background area</h2>
@@ -161,7 +180,7 @@
   <script src="../js/src/calender.js"></script>
   <script src="../js/src/login.js"></script>
   <script src="../js/src/musicPlayer.js"></script>
-  <!-- <script src="../js/src/todolist.js"></script> -->
+  <script src="../js/src/todolist.js"></script>
   <script src="../js/src/removeModal.js"></script>
   <!-- <script src="../js/src/displayMainDetails.js"></script> -->
   <!-- <script src="../js/src/removeModalAddDetails.js">위에 두게 합친버전...</script> -->
