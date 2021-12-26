@@ -12,6 +12,8 @@ const mainBgBoxDetails = document.querySelector(".main_bg_box_details");
 const clock = document.querySelector(".clock");
 
 
+
+
 // function 
 function removeModal() {
   mainConLeftSide.style.opacity = "0";
@@ -109,11 +111,14 @@ function addDetails() {
 
 
   // detail - 4: todolist how many left 
-  // detailListArr[3].querySelector("span").textContent = `Today's todos: ${todolistNum} left`;
-  detailListArr[3].querySelector("span").textContent = `Today's todos: 00 left`;
-  detailListArr[3].querySelector("img").src = "../multi/img/todolist.png";
+  const todosStr = localStorage.getItem("todos");
+  const todosParsed = JSON.parse(todosStr);
+  const todosLen = todosParsed.length;
+  // console.log(todosLen);
 
-  
+
+  detailListArr[3].querySelector("span").textContent = `Today's todos: ${todosLen} left`;
+  detailListArr[3].querySelector("img").src = "../multi/img/todolist.png";
 
 
 

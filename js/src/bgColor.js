@@ -3,16 +3,16 @@
 // random bgColors  (reference: https://flatuicolors.com/palette/tr)
 const bgColors = [
   "#2E1437",
-  "#e1b12c",
+  "#a399fa",
   "#ff9f1a",
   "#373B44",
   "#446270",
   "#9d50bb",
   "#6e48aa",
   "#353b48",
-  "#000046",
+  "#00a046",
   "#0fb9b1",
-  "#ffb8b8",
+  "#ff71b8",
   "#eb3b5a"
 ];
 

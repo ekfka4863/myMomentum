@@ -97,9 +97,11 @@ function checkTodo(e) {
   e.preventDefault();
   
   const parentTodoLi = e.target.parentElement;
+  // const checkTodoBtn = parentTodoLi.querySelector(".todo_btn_wrapper button:nth-child(1)");
   const checkTodoBtnImg = parentTodoLi.querySelector(".check_todo_btn > img");
 
   checkTodoBtnImg.src = "../multi/img/todo_checked.png";
+  // checkTodoBtn.classList.add("done");
 }
 
 // save todos in localStorage
