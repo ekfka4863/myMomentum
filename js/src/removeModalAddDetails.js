@@ -127,7 +127,6 @@ function addDetails() {
   ];
 
   let streamingMusicNum = 0;
-  let prevStreamingMusicNum = streamingMusicNum; 
 
   const playerFunction = document.querySelector(".player_function");
   const prevBtn = playerFunction.querySelector("button:nth-child(1)");
@@ -165,8 +164,6 @@ function addDetails() {
   detailListArr[4].querySelector("span").textContent = `${musicTitles[streamingMusicNum]}`;
   detailListArr[4].querySelector("img").src = "../multi/img/music.png";
 }
-
-
 
 
 

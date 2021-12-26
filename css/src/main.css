@@ -404,6 +404,8 @@ h3 {
   height: 508px;
   border-radius: 20px;
   background-color: rgba(238, 238, 238, 0.8);
+
+  overflow-y: scroll;
 }
 
 .todolist_part::before {
@@ -448,6 +450,49 @@ h3 {
   height: auto;
   margin: auto;
 }
+.todos li {
+  position: relative;
+  width: 320px;
+  height: auto;
+  min-height: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+
+  list-style: square;
+
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--signature-bg-color);
+}
+.todos li p {
+  display: inline-block;
+  width: auto;
+  max-width: 250px;
+  height: auto; 
+  margin: 0;
+  margin-top: 5px;
+  overflow-wrap: break-word;
+  /* background-color: #fff; */
+}
+
+.todo_btn_wrapper {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: inline-block;
+}
+
+.todo_btn_wrapper button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.todo_btn_wrapper button:focus {
+  outline: 3px solid #afd;
+}
+.todo_btn_wrapper button:nth-child(1) {
+  margin-right: 10px;
+}
+
 
 
 
