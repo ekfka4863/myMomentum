@@ -1,20 +1,19 @@
 // todolist.js
 
+
 // DOM
 const todolistPart = document.querySelector(".todolist_part");
 const todolistForm = todolistPart.querySelector("form");
 const todolistInput = todolistForm.querySelector("input");
 const todosUl = document.querySelector(".todos");
 
-
 const TODOS_KEY = "todos";
 
 // create toDos array to store in localStorage
 let toDos = [];
 
-// JSON.parse(localStorage.getItem(TODOS_KEY));
-// JSON.parse(localStorage.getItem(TODOS_KEY)).forEach((todo) => console.log(todo.text));
-// JSON.parse(localStorage.getItem(TODOS_KEY)).forEach((todo) => console.log(todo.id));
+
+
 
 // functions
 
@@ -90,7 +89,7 @@ function paintTodo(newTodoObj) {
 
   // btn event
   deleteTodoBtn.addEventListener("click", deleteTodo);
-  // checkTodoBtn.addEventListener("click", checkTodo);
+  checkTodoBtn.addEventListener("click", checkTodo);
 }
 
 
@@ -102,7 +101,8 @@ function setTodo(e) {
 
   const newTodoObj = {
     text: newTodo,
-    id: Date.now()
+    id: Date.now(),
+    // todoDone: false     
   };
   // console.log("newTodoObj: ", newTodoObj);          // e.g. newTodoObj:{text: '리액트 강의 모두 듣기', id: 1640582581402}
   
@@ -124,18 +124,24 @@ todolistForm.addEventListener("submit", setTodo);
 
 
 
-// function checkTodo(e) {
-//   e.preventDefault();
+function checkTodo(e) {
+  e.preventDefault();
 
-//   const parentTodoLi = e.target.parentElement;
-//   const checkTodoBtnImg = parentTodoLi.querySelector(".check_todo_btn > img");
+  const parentTodoLi = e.target.parentElement;
+  const checkTodoBtnImg = parentTodoLi.querySelector(".check_todo_btn > img");
 
-//   // when clicked add "todo_done" class
-//   parentTodoLi.classList.toggle("todo_done");
-//   checkTodoBtnImg.src = "../multi/img/todo_checked.png";
-// }
+  // when clicked add "todo_done" class
+  // parentTodoLi.classList.toggle("todo_done");
+  // console.log(parentTodoLi.parentElement);
+  parentTodoLi.parentElement.parentElement.classList.toggle("todo_done");  // li 태그에 .todo_done 넣어주기... 
 
+  if (parentTodoLi.parentElement.parentElement.classList.contains("todo_done")) {
+    checkTodoBtnImg.src = "../multi/img/todo_checked.png";
+  } else {
+    checkTodoBtnImg.src = "../multi/img/todo_check.png";
+  }
 
+}
 
 
 
@@ -153,6 +159,8 @@ if (savedTodos !== null) {
     // e.g.  (4) [{…}, {…}, {…}, {…}]
     parsedToDos.forEach(paintTodo);
 
+} else {
+  localStorage(TODOS_KEY, JSON.stringify([]));
 }
 
 

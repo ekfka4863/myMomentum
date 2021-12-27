@@ -11,6 +11,10 @@ const mainBgBoxDetails = document.querySelector(".main_bg_box_details");
 
 const clock = document.querySelector(".clock");
 
+const todoPart = document.querySelector(".todolist_part");
+const todoForm = todolistPart.querySelector("form");
+const todoInput = todolistPart.querySelector("form > input");
+const todoUl = document.querySelector(".todos");
 
 
 
@@ -111,15 +115,52 @@ function addDetails() {
 
 
   // detail - 4: todolist how many left 
+  // 방법 1 - 안좋은 방법...
+  setInterval(()=> {
+    const todosStr = localStorage.getItem("todos");
+    const todosParsed = JSON.parse(todosStr);
+    const todosLen = todosParsed.length;
+    // console.log(todosLen);   // e.g. 2
+    
+
+    detailListArr[3].querySelector("span").textContent = `Today's todos:  ${todosLen} todos`;
+    detailListArr[3].querySelector("img").src = "../multi/img/todolist.png";
+  }, 500)
+
+
   // const todosStr = localStorage.getItem("todos");
   // const todosParsed = JSON.parse(todosStr);
   // const todosLen = todosParsed.length;
-  // // console.log(todosLen);
-
-
-  // detailListArr[3].querySelector("span").textContent = `Today's todos: ${todosLen} left`;
+  // // console.log(todosLen);   // e.g. 2
+  
+  // detailListArr[3].querySelector("span").textContent = `Today's todos:  ${todosLen} todos`;
   // detailListArr[3].querySelector("img").src = "../multi/img/todolist.png";
 
+
+  // 방법 2
+  // todoForm.addEventListener("submit", () => {
+  //   const todosStr = localStorage.getItem("todos");
+  //   const todosParsed = JSON.parse(todosStr);
+  //   const todosLen = todosParsed.length;
+
+  //   detailListArr[3].querySelector("span").textContent = `Today's todos:  ${todosLen} todos`;
+  // });
+
+
+  // const todoList = todoUl.querySelectorAll("li");
+  // const todoListArr = Array.from(todoUl.querySelectorAll("li"));
+  // const todoListArrLen = todoListArr.length;
+
+
+  // // 보완 필요!
+  // todoListArr.forEach((todo) => todo.querySelector("button:nth-child(1) > img").addEventListener("click", () => {
+  //   const todoList = todoUl.querySelectorAll("li");
+  //   const todoListArr = Array.from(todoUl.querySelectorAll("li"));
+  //   const todoListArrLen = todoListArr.length;
+
+  //   // detailListArr[3].querySelector("span").textContent = `Today's todos:  ${todosLen} todos`;
+  //   detailListArr[3].querySelector("span").textContent = `Today's todos:  ${todoListArrLen} todos`;
+  // }));
 
 
 
