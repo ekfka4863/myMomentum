@@ -77,7 +77,6 @@
     - 챌린지를 참여하면서 들은 노마드코더 강의 복습에 효과적이었다
     - `pseudo code`로 어떤 function 부터 구현해서 어디에 넣을지 전반적인 flow를 생각하는 힘을 기르는 좋은 연습시간이었다
   
-<br />
 
 ### 아쉬운 점   
   - 디자인적으로 감각이 없다는 생각에 `figma`로 디자인적으로 내가 만들고자 하는 application의 frame을 만들었는데,     
@@ -86,11 +85,10 @@
   그래서 강의를 다시 보고 따라하면서 하다보니 시간이 생각보다 많이 필요했고, 막판에는 완벽한 기능 구현을 하지 못하고 제출하게 되어 너무 아쉬웠다.        
   ~~결국에는 해결해냈지만, 원래 챌린지 제출시간보다는 오바해서 코딩을 해야했던 것이 계획과는 다르게 흘러간 부분이라 아쉬웠다🥲~~        
   - 클린 코딩을 하고 싶었지만, 실력 부족으로 인해 다소 지저분하고 중복되는 구간이 있었다.    
-  - 원래 디자인을 기획할 때는 하루 24시간을 나눠서 시간에따라 clock에 노란색 border를 주는 것을 계획했었다.     
+  - 원래 디자인을 기획할 때는 하루 24시간을 나눠서 시간에따라 clock에 노란색 border를 주는 것을 계획했었다.        
+    하지만, 시간 부족과 실력 부족으로 인해 `switch` 조건문과 `clip-path` 를 사용해서 만들어보는 것이 가능할 것인지 시도해보다가 결국 해당 스타일링을 완성하지는 못했다.         
 
-  <img src="./figma/clock_yellow_border.png" alt="구현한 어플리케이션 미리보기" width="" height="" style="width: 30px; padding-left: 50px; padding-bottom: 0px;  padding-top: 10px;background-color: ; min-width: 500px; min-height: 350px;" />
-
-  하지만, 시간 부족과 실력 부족으로 인해 `switch` 조건문과 `clip-path` 를 사용해서 만들어보는 것이 가능할 것인지 시도해보다가 결국 해당 스타일링을 완성하지는 못했다.     
+    <img src="./figma/clock_yellow_border.png" alt="구현한 어플리케이션 미리보기" width="300px" height="" style="padding-left: 50px; padding-bottom: 0px;  padding-top: 10px;background-color: ; min-width: 500px; min-height: 350px;" />
 
 
 
