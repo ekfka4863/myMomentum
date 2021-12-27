@@ -70,9 +70,9 @@ function onGeoError() {
   alert("Cannot find your location. Allow browser access to your location to check weather.");
 }
 
-navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
-// event 
+
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
 // ===================================================================================================
 

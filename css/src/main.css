@@ -604,6 +604,25 @@ h3 {
   border-radius: 100%;
   /* border: 1px solid #fff; */
   background-color:  var(--signature-bg-color);
+
+  /* 다시 ...  */
+  /* background: linear-gradient(170deg, yellow, orange); */
+
+  /* 시간대별로 ... 
+  clip-path: inset(0 0 100% 50%);  // 12시 or 0
+  clip-path: inset(0 0 85% 50%);   // 1시
+  clip-path: inset(0 0 70% 50%);   // 2시
+  clip-path: inset(0 0 50% 50%);   // 3시
+  clip-path: inset(0 0 35% 50%);   // 4시 
+  clip-path: inset(0 0 15% 50%);   // 5시 
+  clip-path: inset(0 0 0% 50%);    // 6시
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 90%, 30% 100%, 50% 50%); // 7시
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 90%, 15% 75%, 50% 50%);  // 8시
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 50%, 50% 50%); // 9시
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 15%, 9% 15%, 49% 28%); // 10시
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 30% 0, 31% 15%, 50% 15%); // 11시
+  clip-path: inset(0 0 0 0); // 12시 or 24시
+  */
 }
 .clock::after {
   position: absolute;
@@ -617,7 +636,6 @@ h3 {
   content: "";
   overflow: hidden;
   border-radius: 100%;
-  /* border: 1px solid #ead; */
   background-color:  var(--signature-bg-color-2);
 }
 

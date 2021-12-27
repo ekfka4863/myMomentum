@@ -111,14 +111,14 @@ function addDetails() {
 
 
   // detail - 4: todolist how many left 
-  const todosStr = localStorage.getItem("todos");
-  const todosParsed = JSON.parse(todosStr);
-  const todosLen = todosParsed.length;
-  // console.log(todosLen);
+  // const todosStr = localStorage.getItem("todos");
+  // const todosParsed = JSON.parse(todosStr);
+  // const todosLen = todosParsed.length;
+  // // console.log(todosLen);
 
 
-  detailListArr[3].querySelector("span").textContent = `Today's todos: ${todosLen} left`;
-  detailListArr[3].querySelector("img").src = "../multi/img/todolist.png";
+  // detailListArr[3].querySelector("span").textContent = `Today's todos: ${todosLen} left`;
+  // detailListArr[3].querySelector("img").src = "../multi/img/todolist.png";
 
 
 
