@@ -65,8 +65,8 @@
 
 <br />
 
-📍 [DEMO](https://ekfka4863.github.io/myMomentum/) 📍 
-<!-- 📍 [displayed in NomadCoder's website]() 📍  -->
+📍 [DEMO](https://ekfka4863.github.io/myMomentum/) 📍     
+📍 [Displayed in NomadCoder's website](https://nomadcoders.co/community/thread/1617) 📍 
 
 <br />
 <br />
@@ -74,7 +74,8 @@
 ## 💡 챌린지 피드백 / 소감 / 후기
 ### 배운 점     
   - 조건이 명확하게 주어진 챌린지였기 때문에, 언급된 기능을 어떤 메서드로 어떻게 구현할 것인가에 대해 많은 고민을 해볼 수 있는 기회였다고 생각한다.
-    - 챌린지를 참여하면서 들은 노마드코더 강의 복습에 효과적이었다
+    - 챌린지를 참여하면서 들은 노마드코더 강의 복습에 효과적이었다    
+      - e.g. geolocation, weather API 불러오기 등
     - `pseudo code`로 어떤 function 부터 구현해서 어디에 넣을지 전반적인 flow를 생각하는 힘을 기르는 좋은 연습시간이었다
   
 
@@ -91,6 +92,11 @@
     <img src="./figma/clock_yellow_border.png" alt="구현한 어플리케이션 미리보기" width="300px" height="" style="padding-left: 50px; padding-bottom: 0px;  padding-top: 10px;background-color: ; min-width: 500px; min-height: 350px;" />
 
 
+### 만족한 점   
+- 한 챌린지에 참여하여 끝까지 완주했다는 성취감이 있었다. 
+- 또한 이번 챌린지의 졸업작품으로 만든 myMomentum 어플리케이션이 노마드코더 바닐라 JS 챌린지 19기 우수 졸업생 완성작으로 뽑혀서 언급된 것이 정말로 너무 기뻤다.    
+
+📍 [Displayed in NomadCoder's website](https://nomadcoders.co/community/thread/1617) 📍 
 
 <br />
 <br />
