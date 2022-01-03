@@ -96,9 +96,13 @@
 - 한 챌린지에 참여하여 끝까지 완주했다는 성취감이 있었다. 
 - 또한 이번 챌린지의 졸업작품으로 만든 myMomentum 어플리케이션이 노마드코더 바닐라 JS 챌린지 19기 우수 졸업생 완성작으로 뽑혀서 언급된 것이 정말로 너무 기뻤다.    
 
-📍 [Displayed in NomadCoder's website](https://nomadcoders.co/community/thread/1617) 📍 
+<img src="./multi/img/nomadcoders.png" alt="노마드코더 사이트에서 선정된 구현한 어플리케이션" width="300px" height="" style="padding-left: 45px; padding-bottom: 0px;  padding-top: 10px;background-color: ; min-width: 500px; min-height: 350px;" />
+
+<a href="https://nomadcoders.co/community/thread/1617" style="padding-left: 45px;">Displayed in NomadCoder's website</a> 
 
 <br />
 <br />
 
 🎄 읽어 주셔서 감사합니다! 더 성장하는 개발자가 되겠습니다! 🎉
+
+

@@ -102,7 +102,7 @@ function addDetails() {
       detailListArr[2].querySelector("span").textContent = `${weather}, ${temperature} °C`;
 
       detailListArr[1].querySelector("img").src = "../multi/img/location_icon.png";
-      detailListArr[2].querySelector("img").src = "../multi/img/snowy.png";
+      detailListArr[2].querySelector("img").src = "../multi/img/satellite_weather.png";
     })
   
   }
